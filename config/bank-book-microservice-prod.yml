@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:prod-db
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+build:
+  version: "APP-Version-1.0.0"
+
+bank-book:
+  message: "Welcome to Bank Book Microservice APIs"
+  contacts:
+    name: "Prod User"
+    email: "prodUser@gmail.com"
+  onCallSupport:
+    - (91)12345678
